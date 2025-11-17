@@ -99,7 +99,7 @@
           </div>
         </div>
 
-        <!-- Redesigned GP–Pharmacy Network Info-Graphic -->
+        <!-- GP–Pharmacy Research Network Info-Graphic -->
         <div class="lg:pl-4">
           <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
             <h2 class="text-sm font-semibold text-gray-800 uppercase tracking-wide">
@@ -110,7 +110,7 @@
             </p>
             <div class="mt-5">
               <svg viewBox="0 0 380 230" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-                <!-- Card background -->
+                <!-- Gradients -->
                 <defs>
                   <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
                     <stop offset="0%" stop-color="#EEF2FF" />
@@ -122,6 +122,7 @@
                   </linearGradient>
                 </defs>
 
+                <!-- Card background -->
                 <rect x="8" y="10" width="364" height="210" rx="18" fill="url(#panelGrad)" />
 
                 <!-- Central core (Co-MedX) -->
@@ -178,20 +179,17 @@
                   Study funding &amp; design
                 </text>
 
-                <!-- Connecting lines (curved) -->
+                <!-- Connecting lines + dots -->
                 <path d="M142 82 C142 60, 142 56, 142 56" stroke="#94A3B8" stroke-width="1.8" fill="none" />
                 <circle cx="142" cy="56" r="3" fill="#4F46E5"/>
-
                 <path d="M238 82 C238 60, 238 56, 238 56" stroke="#94A3B8" stroke-width="1.8" fill="none" />
                 <circle cx="238" cy="56" r="3" fill="#0EA5E9"/>
-
                 <path d="M142 150 C142 172, 142 176, 142 176" stroke="#94A3B8" stroke-width="1.8" fill="none" />
                 <circle cx="142" cy="176" r="3" fill="#EAB308"/>
-
                 <path d="M238 150 C238 172, 238 176, 238 176" stroke="#94A3B8" stroke-width="1.8" fill="none" />
                 <circle cx="238" cy="176" r="3" fill="#6366F1"/>
 
-                <!-- Small legend -->
+                <!-- Legend -->
                 <text x="190" y="210" text-anchor="middle" font-size="8" fill="#4B5563"
                       font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
                   Data, governance &amp; recruitment flows coordinated centrally by Co-MedX
@@ -277,6 +275,7 @@
 
           <!-- Co-Founders -->
           <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <!-- Xiaoyu (占位符头像，如果之后有照片可以改成 <img src="xiaoyu.jpg"> ) -->
             <div class="flex items-start space-x-4">
               <div class="h-16 w-16 rounded-full bg-gray-200 flex-shrink-0"></div>
               <div>
@@ -287,18 +286,20 @@
                 </p>
               </div>
             </div>
-           <div class="flex items-start space-x-4">
-  <img src="dennis-tiong.jpg"
-       class="h-16 w-16 rounded-full object-cover flex-shrink-0"
-       alt="Dr Shyun Ping (Dennis) Tiong">
-  <div>
-    <h3 class="text-base font-semibold text-gray-900">Dr Shyun Ping (Dennis) Tiong</h3>
-    <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
-    <p class="mt-2 text-sm text-gray-600">
-      Bio coming soon.
-    </p>
-  </div>
-</div>
+
+            <!-- Dennis Tiong（已接照片） -->
+            <div class="flex items-start space-x-4">
+              <img src="dennis-tiong.jpg"
+                   class="h-16 w-16 rounded-full object-cover flex-shrink-0"
+                   alt="Dr Shyun Ping (Dennis) Tiong">
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Dr Shyun Ping (Dennis) Tiong</h3>
+                <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Bio coming soon.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -501,4 +502,3 @@
   </script>
 </body>
 </html>
-
