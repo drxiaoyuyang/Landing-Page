@@ -11,13 +11,38 @@
   <header class="sticky top-0 z-30 border-b bg-white/80 backdrop-blur">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center">
-        <img src="Co-MedX.png" alt="Co-MedX Logo" class="h-12 w-auto">
+        <img src="Co-MedX.png" alt="Co-MedX Logo" class="h-10 sm:h-12 w-auto">
       </a>
+
+      <!-- Desktop nav -->
       <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
-        <a href="#about" class="hover:text-indigo-600">Who we are</a>
-        <a href="#who-we-work-with" class="hover:text-indigo-600">Who we work with</a>
-        <a href="#how-it-works" class="hover:text-indigo-600">How it works</a>
-        <a href="#contact" class="inline-flex items-center px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">
+        <a href="#about" class="top-nav-link hover:text-indigo-600">Who we are</a>
+        <a href="#who-we-work-with" class="top-nav-link hover:text-indigo-600">Who we work with</a>
+        <a href="#how-it-works" class="top-nav-link hover:text-indigo-600">How it works</a>
+        <a href="#contact" class="top-nav-link inline-flex items-center px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">
+          Contact
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button"
+              class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100"
+              aria-label="Open main menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t bg-white/95">
+      <nav class="max-w-6xl mx-auto px-4 py-3 text-sm font-medium text-gray-700 space-y-2">
+        <a href="#about" class="block mobile-nav-link px-1 py-1 hover:text-indigo-600">Who we are</a>
+        <a href="#who-we-work-with" class="block mobile-nav-link px-1 py-1 hover:text-indigo-600">Who we work with</a>
+        <a href="#how-it-works" class="block mobile-nav-link px-1 py-1 hover:text-indigo-600">How it works</a>
+        <a href="#contact"
+           class="block mobile-nav-link mt-2 inline-flex items-center px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">
           Contact
         </a>
       </nav>
@@ -34,11 +59,12 @@
             <span>Primary Care Clinical Research</span>
           </div>
           <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">
-            Bring real-world clinical trials into community supported by GP and pharmacies.
+            Delivering real-world clinical trials through GP and pharmacy networks.
           </h1>
           <p class="mt-4 text-base sm:text-lg text-gray-600">
-            Supported by GP and Pharmacy network, Co-MedX connects community with sponsors and CROs
-            to deliver patient-centred clinical research in primary care – safely, compliantly, and at scale.
+            Supported by a trusted network of GPs and community pharmacies, Co-MedX connects local populations
+            with sponsors and CROs to deliver patient-centred clinical research in primary care — safely,
+            compliantly, and at scale.
           </p>
 
           <div class="mt-6 grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
@@ -48,7 +74,7 @@
             </div>
             <div class="rounded-lg border border-indigo-100 bg-white px-3 py-3">
               <p class="font-semibold text-gray-900">Study types</p>
-              <p class="mt-1 text-gray-600">Feasibility, cohorts, pragmatic RCTs and device studies.</p>
+              <p class="mt-1 text-gray-600">Feasibility studies, observational cohorts, pragmatic RCTs and device studies.</p>
             </div>
             <div class="rounded-lg border border-indigo-100 bg-white px-3 py-3">
               <p class="font-semibold text-gray-900">Support</p>
@@ -72,184 +98,271 @@
           </div>
         </div>
 
-        <!-- 原右侧“Designed for real-world studies”卡片已按要求移除 -->
-      </div>
-    </section>
-
-    <!-- Who we are -->
-    <section id="about" class="py-16 bg-white border-t border-gray-200">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-10 items-start">
-          <div>
-            <h2 class="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-              Who we are
+        <!-- GP–Pharmacy Network Info-Graphic (原创 SVG，无版权风险) -->
+        <div class="lg:pl-4">
+          <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 sm:p-8">
+            <h2 class="text-sm font-semibold text-gray-800 uppercase tracking-wide">
+              GP–Pharmacy Research Network
             </h2>
-            <p class="mt-3 text-2xl font-bold text-gray-900">
-              A bridge between pharmacy networks and sponsors.
+            <p class="mt-2 text-sm text-gray-600">
+              A connected primary-care research network linking GPs, community pharmacies, patients and sponsors through Co-MedX.
             </p>
-            <p class="mt-4 text-gray-600">
-              Co-MedX is a UK-based, physician-led clinical research start-up focused on making
-              high-quality clinical trials accessible to community supported by GP and Pharmacy network.
-              We combine on-the-ground research experience with digital tools to support sponsors and CROs.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-xl border border-gray-100 p-6">
-            <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide">
-              What we do
-            </h3>
-            <ul class="mt-4 space-y-3 text-gray-600 text-sm">
-              <li class="flex">
-                <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
-                <span>Design pharmacy-feasible study pathways that fit into real-world workflows.</span>
-              </li>
-              <li class="flex">
-                <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
-                <span>Onboard, train and support GP and community pharmacies as participate identification centre or research-ready sites.</span>
-              </li>
-              <li class="flex">
-                <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
-                <span>Coordinate recruitment, consent and data collection with clear governance.</span>
-              </li>
-              <li class="flex">
-                <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
-                <span>Provide transparent performance reporting and GP / pharmacy-level insights.</span>
-              </li>
-              <li class="flex">
-                <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
-                <span>Provide state of art clinic in central London.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+            <div class="mt-4">
+              <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <!-- Background -->
+                <rect x="0" y="0" width="360" height="220" rx="12" fill="#F9FAFB" />
+                <!-- Central node -->
+                <circle cx="180" cy="105" r="26" fill="#4F46E5" />
+                <text x="180" y="110" text-anchor="middle" font-size="11" fill="white" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Co-MedX
+                </text>
 
-        <!-- Co-Founders -->
-        <div class="mt-12 grid md:grid-cols-2 gap-8">
-          <div class="flex items-start space-x-4">
-            <div class="h-16 w-16 rounded-full bg-gray-200 flex-shrink-0"></div>
-            <div>
-              <h3 class="text-base font-semibold text-gray-900">Dr Xiaoyu Yang</h3>
-              <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
-              <p class="mt-2 text-sm text-gray-600">
-                Bio coming soon.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="h-16 w-16 rounded-full bg-gray-200 flex-shrink-0"></div>
-            <div>
-              <h3 class="text-base font-semibold text-gray-900">Dr Shyun Tiong</h3>
-              <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
-              <p class="mt-2 text-sm text-gray-600">
-                Bio coming soon.
-              </p>
+                <!-- GP node -->
+                <circle cx="80" cy="60" r="20" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5" />
+                <text x="80" y="56" text-anchor="middle" font-size="10" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  GP
+                </text>
+                <text x="80" y="69" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  practices
+                </text>
+
+                <!-- Pharmacy node -->
+                <circle cx="280" cy="60" r="20" fill="#ECFEFF" stroke="#0EA5E9" stroke-width="1.5" />
+                <text x="280" y="56" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Pharmacies
+                </text>
+                <text x="280" y="69" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  community &amp; digital
+                </text>
+
+                <!-- Patients node -->
+                <circle cx="80" cy="155" r="20" fill="#FEF9C3" stroke="#EAB308" stroke-width="1.5" />
+                <text x="80" y="151" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Patients
+                </text>
+                <text x="80" y="164" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  local communities
+                </text>
+
+                <!-- Sponsors node -->
+                <circle cx="280" cy="155" r="20" fill="#EEF2FF" stroke="#6366F1" stroke-width="1.5" />
+                <text x="280" y="151" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Sponsors
+                </text>
+                <text x="280" y="164" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  &amp; CROs
+                </text>
+
+                <!-- Connecting lines -->
+                <line x1="106" y1="70" x2="154" y2="97" stroke="#CBD5F5" stroke-width="2" />
+                <line x1="254" y1="70" x2="206" y2="97" stroke="#CBD5F5" stroke-width="2" />
+                <line x1="106" y1="145" x2="154" y2="113" stroke="#CBD5F5" stroke-width="2" />
+                <line x1="254" y1="145" x2="206" y2="113" stroke="#CBD5F5" stroke-width="2" />
+              </svg>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Who we work with -->
-    <section id="who-we-work-with" class="py-16 bg-gray-50 border-t border-gray-200">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-center text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-          Who we work with
-        </h2>
-        <p class="mt-3 text-center text-2xl font-bold text-gray-900">
-          Aligned incentives for every stakeholder in the pathway.
-        </p>
-        <p class="mt-3 max-w-2xl mx-auto text-center text-sm text-gray-600">
-          We support the full ecosystem around GP / pharmacy-based research – ensuring benefits and
-          responsibilities are clear for GP, pharmacies, sponsors and participants.
-        </p>
+    <!-- Main content with sticky side nav on desktop -->
+    <div class="max-w-6xl mx-auto px-4 lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-10 lg:items-start">
+      <!-- Sticky side nav (desktop only) -->
+      <aside class="hidden lg:block pt-6">
+        <nav id="side-nav" class="sticky top-28 text-sm space-y-2">
+          <a href="#about"
+             class="side-nav-link block border-l-2 border-transparent pl-3 py-1 text-gray-500 hover:text-indigo-600 hover:border-indigo-200">
+            Who we are
+          </a>
+          <a href="#who-we-work-with"
+             class="side-nav-link block border-l-2 border-transparent pl-3 py-1 text-gray-500 hover:text-indigo-600 hover:border-indigo-200">
+            Who we work with
+          </a>
+          <a href="#how-it-works"
+             class="side-nav-link block border-l-2 border-transparent pl-3 py-1 text-gray-500 hover:text-indigo-600 hover:border-indigo-200">
+            How it works
+          </a>
+          <a href="#contact"
+             class="side-nav-link block border-l-2 border-transparent pl-3 py-1 text-gray-500 hover:text-indigo-600 hover:border-indigo-200">
+            Contact
+          </a>
+        </nav>
+      </aside>
 
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-            <h3 class="text-lg font-semibold text-gray-900">Community GP / pharmacies</h3>
-            <p class="mt-3 text-sm text-gray-600">
-              New revenue streams, professional development and stronger patient relationships through participation
-              in high-quality research – with practical, hands-on support from our team.
-            </p>
+      <!-- Sections -->
+      <div class="space-y-16 lg:space-y-20">
+        <!-- Who we are -->
+        <section id="about" class="py-16 lg:py-20 bg-white border-t border-gray-200 lg:border-none">
+          <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+              <h2 class="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
+                Who we are
+              </h2>
+              <p class="mt-3 text-2xl font-bold text-gray-900">
+                A bridge between primary care and clinical research sponsors.
+              </p>
+              <p class="mt-4 text-gray-600">
+                Co-MedX is a UK-based, physician-led clinical research start-up dedicated to making
+                high-quality clinical trials accessible through GP and pharmacy networks. We combine
+                hands-on research experience with digital tools to support sponsors and CROs across
+                the full study lifecycle.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-xl border border-gray-100 p-6">
+              <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wide">
+                What we do
+              </h3>
+              <ul class="mt-4 space-y-3 text-gray-600 text-sm">
+                <li class="flex">
+                  <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                  <span>Design primary-care-feasible study pathways that integrate smoothly into real-world workflows.</span>
+                </li>
+                <li class="flex">
+                  <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                  <span>Onboard, train and support GPs and community pharmacies as Participant Identification Centres (PICs) or research-ready study sites.</span>
+                </li>
+                <li class="flex">
+                  <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                  <span>Coordinate recruitment, consent and data collection with strong governance and clear documentation standards.</span>
+                </li>
+                <li class="flex">
+                  <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                  <span>Provide transparent performance reporting and insights at both GP and pharmacy level.</span>
+                </li>
+                <li class="flex">
+                  <span class="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                  <span>Operate a state-of-the-art central London clinic for site visits and trial procedures.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-            <h3 class="text-lg font-semibold text-gray-900">Sponsors &amp; CROs</h3>
-            <p class="mt-3 text-sm text-gray-600">
-              Access diverse primary-care populations, faster recruitment and real-world adherence data by bringing
-              studies into the places where patients already collect medicines and seek advice.
-            </p>
+
+          <!-- Co-Founders -->
+          <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <div class="flex items-start space-x-4">
+              <div class="h-16 w-16 rounded-full bg-gray-200 flex-shrink-0"></div>
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Dr Xiaoyu Yang</h3>
+                <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Bio coming soon.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="h-16 w-16 rounded-full bg-gray-200 flex-shrink-0"></div>
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Dr Shyun Ping (Dennis) Tiong</h3>
+                <p class="mt-1 text-xs uppercase tracking-wide text-gray-500">Co-Founder</p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Bio coming soon.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-            <h3 class="text-lg font-semibold text-gray-900">Patients &amp; communities</h3>
-            <p class="mt-3 text-sm text-gray-600">
-              Safer, more inclusive trials that minimise travel burden and integrate research into routine care,
-              with clear information and a focus on patient experience.
-            </p>
+        </section>
+
+        <!-- Who we work with -->
+        <section id="who-we-work-with" class="py-16 lg:py-20 bg-gray-50 border-t border-gray-200">
+          <h2 class="text-center text-sm font-semibold text-indigo-600 uppercase tracking-wide">
+            Who we work with
+          </h2>
+          <p class="mt-3 text-center text-2xl font-bold text-gray-900">
+            Aligned incentives for every stakeholder across the primary-care research pathway.
+          </p>
+          <p class="mt-3 max-w-2xl mx-auto text-center text-sm text-gray-600">
+            We support the entire ecosystem surrounding GP- and pharmacy-based research — ensuring that roles,
+            responsibilities and benefits are clearly defined for GPs, pharmacies, sponsors and participants.
+          </p>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 class="text-lg font-semibold text-gray-900">Community GPs and pharmacies</h3>
+              <p class="mt-3 text-sm text-gray-600">
+                New revenue streams, professional development and stronger patient relationships through participation
+                in high-quality research — supported by practical, hands-on guidance from our team.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 class="text-lg font-semibold text-gray-900">Sponsors &amp; CROs</h3>
+              <p class="mt-3 text-sm text-gray-600">
+                Access diverse primary-care populations, accelerate recruitment timelines and generate real-world
+                adherence data by conducting research where patients naturally seek healthcare.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 class="text-lg font-semibold text-gray-900">Patients &amp; communities</h3>
+              <p class="mt-3 text-sm text-gray-600">
+                Safer, more inclusive trials that minimise travel burden and integrate research into familiar care
+                settings, with clear communication and a strong focus on participant experience.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how-it-works" class="py-16 lg:py-20 bg-white border-t border-gray-200">
+          <h2 class="text-center text-sm font-semibold text-indigo-600 uppercase tracking-wide">
+            How it works
+          </h2>
+          <p class="mt-3 text-center text-2xl font-bold text-gray-900">
+            A simple three-step pathway from expression of interest to active recruitment.
+          </p>
+
+          <ol class="mt-10 space-y-6">
+            <li class="flex items-start">
+              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+                1
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Expression of interest</h3>
+                <p class="mt-1 text-sm text-gray-600">
+                  Contact us to join our Primary Care Research Network and explore opportunities to participate in upcoming clinical studies.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+                2
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Site onboarding &amp; training</h3>
+                <p class="mt-1 text-sm text-gray-600">
+                  When a suitable study becomes available, we identify and onboard participating GP practices and pharmacies,
+                  provide GCP-aligned training and study materials, and ensure governance, contracting and documentation
+                  requirements are in place.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+                3
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-gray-900">Recruitment &amp; delivery support</h3>
+                <p class="mt-1 text-sm text-gray-600">
+                  During active recruitment we support sites with screening, documentation and data capture, while providing
+                  sponsors with transparent performance and quality reporting.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <!-- How it works -->
-    <section id="how-it-works" class="py-16 bg-white border-t border-gray-200">
-      <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-center text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-          How it works
-        </h2>
-        <p class="mt-3 text-center text-2xl font-bold text-gray-900">
-          A simple three-step pathway from concept to recruitment.
-        </p>
-
-        <ol class="mt-10 space-y-6">
-          <li class="flex items-start">
-            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
-              1
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-gray-900">Expression of interest</h3>
-              <p class="mt-1 text-sm text-gray-600">
-                Contact us to join Primary Care Research Network.
-              </p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
-              2
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-gray-900">Site onboarding &amp; training</h3>
-              <p class="mt-1 text-sm text-gray-600">
-                When we have a clinical trial, we will identify and onboard suitable pharmacies, provide
-                GCP-aligned training and study materials, and ensure governance, contracts and documentation are in place.
-              </p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
-              3
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-gray-900">Recruitment &amp; delivery support</h3>
-              <p class="mt-1 text-sm text-gray-600">
-                During active recruitment we support pharmacies with screening, documentation and data capture,
-                and provide sponsors with transparent performance and quality reporting.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 bg-indigo-950 text-indigo-50 border-t border-gray-900/10">
+    <!-- Contact (full-width) -->
+    <section id="contact" class="mt-8 py-16 bg-indigo-950 text-indigo-50 border-t border-gray-900/10">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-xs font-semibold text-indigo-300 uppercase tracking-wide">
           Ready to explore a study?
         </h2>
         <p class="mt-3 text-2xl sm:text-3xl font-bold">
-          Let’s talk about your next primary-care research project.
+          Let’s discuss your next primary-care research project.
         </p>
         <p class="mt-4 text-sm sm:text-base text-indigo-100/80">
           Whether you are planning a feasibility study, an observational cohort or a pragmatic RCT,
-          we can help you find a realistic pathway that works for sponsors, GP, pharmacies and patients.
+          we can help you identify a realistic delivery pathway that works for sponsors, GPs, pharmacies and patients.
         </p>
         <div class="mt-8">
           <a href="mailto:xiaoyu.yang@co-medx.com"
@@ -258,10 +371,82 @@
           </a>
         </div>
         <p class="mt-4 text-xs text-indigo-300">
-          We are UK-based and happy to sign Non-Disclosure Agreements before discussing protocol details.
+          We are UK-based and are happy to sign Non-Disclosure Agreements before reviewing protocol details.
         </p>
       </div>
     </section>
   </main>
+
+  <!-- Simple JS: mobile menu + scroll-based highlighting -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Scroll-based highlighting for nav
+    const sectionIds = ['about', 'who-we-work-with', 'how-it-works', 'contact'];
+    const sections = sectionIds
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+
+    const topNavLinks = document.querySelectorAll('.top-nav-link');
+    const sideNavLinks = document.querySelectorAll('.side-nav-link');
+
+    function setActiveSection(id) {
+      topNavLinks.forEach(link => {
+        const href = link.getAttribute('href') || '';
+        if (href.endsWith('#' + id)) {
+          link.classList.add('text-indigo-600');
+          link.classList.remove('text-gray-700');
+        } else {
+          link.classList.remove('text-indigo-600');
+        }
+      });
+
+      sideNavLinks.forEach(link => {
+        const href = link.getAttribute('href') || '';
+        if (href.endsWith('#' + id)) {
+          link.classList.add('text-indigo-600', 'font-semibold', 'border-indigo-600');
+          link.classList.remove('text-gray-500');
+        } else {
+          link.classList.remove('text-indigo-600', 'font-semibold', 'border-indigo-600');
+        }
+      });
+    }
+
+    if ('IntersectionObserver' in window && sections.length) {
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              if (sectionIds.includes(id)) {
+                setActiveSection(id);
+              }
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.4
+        }
+      );
+
+      sections.forEach(section => observer.observe(section));
+    }
+  </script>
 </body>
 </html>
