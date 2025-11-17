@@ -19,7 +19,8 @@
         <a href="#about" class="top-nav-link hover:text-indigo-600">Who we are</a>
         <a href="#who-we-work-with" class="top-nav-link hover:text-indigo-600">Who we work with</a>
         <a href="#how-it-works" class="top-nav-link hover:text-indigo-600">How it works</a>
-        <a href="#contact" class="top-nav-link inline-flex items-center px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">
+        <a href="#contact"
+           class="top-nav-link inline-flex items-center px-3 py-1.5 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">
           Contact
         </a>
       </nav>
@@ -98,66 +99,103 @@
           </div>
         </div>
 
-        <!-- GP–Pharmacy Network Info-Graphic (原创 SVG，无版权风险) -->
+        <!-- Redesigned GP–Pharmacy Network Info-Graphic -->
         <div class="lg:pl-4">
-          <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 sm:p-8">
+          <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
             <h2 class="text-sm font-semibold text-gray-800 uppercase tracking-wide">
               GP–Pharmacy Research Network
             </h2>
             <p class="mt-2 text-sm text-gray-600">
               A connected primary-care research network linking GPs, community pharmacies, patients and sponsors through Co-MedX.
             </p>
-            <div class="mt-4">
-              <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-                <!-- Background -->
-                <rect x="0" y="0" width="360" height="220" rx="12" fill="#F9FAFB" />
-                <!-- Central node -->
-                <circle cx="180" cy="105" r="26" fill="#4F46E5" />
-                <text x="180" y="110" text-anchor="middle" font-size="11" fill="white" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+            <div class="mt-5">
+              <svg viewBox="0 0 380 230" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <!-- Card background -->
+                <defs>
+                  <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#EEF2FF" />
+                    <stop offset="100%" stop-color="#E0F2FE" />
+                  </linearGradient>
+                  <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#4F46E5" />
+                    <stop offset="100%" stop-color="#0EA5E9" />
+                  </linearGradient>
+                </defs>
+
+                <rect x="8" y="10" width="364" height="210" rx="18" fill="url(#panelGrad)" />
+
+                <!-- Central core (Co-MedX) -->
+                <rect x="135" y="80" width="110" height="70" rx="14" fill="white" stroke="#4F46E5" stroke-width="1.5" />
+                <rect x="140" y="85" width="100" height="60" rx="12" fill="url(#coreGrad)" />
+                <text x="190" y="115" text-anchor="middle" font-size="13" fill="white"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
                   Co-MedX
                 </text>
-
-                <!-- GP node -->
-                <circle cx="80" cy="60" r="20" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5" />
-                <text x="80" y="56" text-anchor="middle" font-size="10" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  GP
-                </text>
-                <text x="80" y="69" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  practices
+                <text x="190" y="132" text-anchor="middle" font-size="9" fill="#E5E7EB"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Network Orchestrator
                 </text>
 
-                <!-- Pharmacy node -->
-                <circle cx="280" cy="60" r="20" fill="#ECFEFF" stroke="#0EA5E9" stroke-width="1.5" />
-                <text x="280" y="56" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                <!-- Top row: GP & Pharmacies -->
+                <rect x="32" y="36" width="110" height="46" rx="10" fill="white" stroke="#A5B4FC" />
+                <text x="87" y="57" text-anchor="middle" font-size="11" fill="#111827"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  GP practices
+                </text>
+                <text x="87" y="70" text-anchor="middle" font-size="8" fill="#6B7280"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Primary care hubs
+                </text>
+
+                <rect x="238" y="36" width="110" height="46" rx="10" fill="white" stroke="#7DD3FC" />
+                <text x="293" y="57" text-anchor="middle" font-size="11" fill="#111827"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
                   Pharmacies
                 </text>
-                <text x="280" y="69" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  community &amp; digital
+                <text x="293" y="70" text-anchor="middle" font-size="8" fill="#6B7280"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Community &amp; digital
                 </text>
 
-                <!-- Patients node -->
-                <circle cx="80" cy="155" r="20" fill="#FEF9C3" stroke="#EAB308" stroke-width="1.5" />
-                <text x="80" y="151" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                <!-- Bottom row: Patients & Sponsors -->
+                <rect x="32" y="150" width="110" height="52" rx="10" fill="white" stroke="#FACC15" />
+                <text x="87" y="170" text-anchor="middle" font-size="11" fill="#111827"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
                   Patients
                 </text>
-                <text x="80" y="164" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  local communities
+                <text x="87" y="184" text-anchor="middle" font-size="8" fill="#6B7280"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Local communities
                 </text>
 
-                <!-- Sponsors node -->
-                <circle cx="280" cy="155" r="20" fill="#EEF2FF" stroke="#6366F1" stroke-width="1.5" />
-                <text x="280" y="151" text-anchor="middle" font-size="9" fill="#111827" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  Sponsors
+                <rect x="238" y="150" width="110" height="52" rx="10" fill="white" stroke="#6366F1" />
+                <text x="293" y="170" text-anchor="middle" font-size="11" fill="#111827"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Sponsors &amp; CROs
                 </text>
-                <text x="280" y="164" text-anchor="middle" font-size="8" fill="#6B7280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-                  &amp; CROs
+                <text x="293" y="184" text-anchor="middle" font-size="8" fill="#6B7280"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Study funding &amp; design
                 </text>
 
-                <!-- Connecting lines -->
-                <line x1="106" y1="70" x2="154" y2="97" stroke="#CBD5F5" stroke-width="2" />
-                <line x1="254" y1="70" x2="206" y2="97" stroke="#CBD5F5" stroke-width="2" />
-                <line x1="106" y1="145" x2="154" y2="113" stroke="#CBD5F5" stroke-width="2" />
-                <line x1="254" y1="145" x2="206" y2="113" stroke="#CBD5F5" stroke-width="2" />
+                <!-- Connecting lines (curved) -->
+                <path d="M142 82 C142 60, 142 56, 142 56" stroke="#94A3B8" stroke-width="1.8" fill="none" />
+                <circle cx="142" cy="56" r="3" fill="#4F46E5"/>
+
+                <path d="M238 82 C238 60, 238 56, 238 56" stroke="#94A3B8" stroke-width="1.8" fill="none" />
+                <circle cx="238" cy="56" r="3" fill="#0EA5E9"/>
+
+                <path d="M142 150 C142 172, 142 176, 142 176" stroke="#94A3B8" stroke-width="1.8" fill="none" />
+                <circle cx="142" cy="176" r="3" fill="#EAB308"/>
+
+                <path d="M238 150 C238 172, 238 176, 238 176" stroke="#94A3B8" stroke-width="1.8" fill="none" />
+                <circle cx="238" cy="176" r="3" fill="#6366F1"/>
+
+                <!-- Small legend -->
+                <text x="190" y="210" text-anchor="middle" font-size="8" fill="#4B5563"
+                      font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+                  Data, governance &amp; recruitment flows coordinated centrally by Co-MedX
+                </text>
               </svg>
             </div>
           </div>
@@ -311,7 +349,7 @@
 
           <ol class="mt-10 space-y-6">
             <li class="flex items-start">
-              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+              <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-base font-semibold text-white mr-4">
                 1
               </div>
               <div>
@@ -322,7 +360,7 @@
               </div>
             </li>
             <li class="flex items-start">
-              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+              <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-base font-semibold text-white mr-4">
                 2
               </div>
               <div>
@@ -335,7 +373,7 @@
               </div>
             </li>
             <li class="flex items-start">
-              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-sm font-semibold text-white mr-4">
+              <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600 text-base font-semibold text-white mr-4">
                 3
               </div>
               <div>
@@ -376,6 +414,20 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-400 text-xs">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <div class="space-y-1">
+        <p>&copy; 2025 Co-MedX Ltd. All rights reserved.</p>
+        <p>Registered in England &amp; Wales. Company details available on request.</p>
+      </div>
+      <div class="space-y-1 text-[11px] sm:text-xs text-gray-500 sm:text-right">
+        <p>This website is for information only and does not provide medical advice.</p>
+        <p>Co-MedX operates in line with GCP, GDPR and applicable UK research governance frameworks.</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Simple JS: mobile menu + scroll-based highlighting -->
   <script>
@@ -439,10 +491,7 @@
             }
           });
         },
-        {
-          root: null,
-          threshold: 0.4
-        }
+        { root: null, threshold: 0.4 }
       );
 
       sections.forEach(section => observer.observe(section));
